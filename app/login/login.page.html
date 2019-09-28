@@ -1,0 +1,31 @@
+<ion-content padding>
+    <form #form="ngForm" (ngSubmit)="login(form)">
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>Login</h3>
+              <h4>Kurniawan Footware</h4>
+            </div>
+            <div padding>
+                <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+
+                <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+            </div>
+            <div padding>
+              <ion-button size="large" type="submit" expand="block">Login</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col text-center>
+            <div class='lp-pass'>
+                Lupa password ? Klik disini.
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </ion-content>
+  
+  
